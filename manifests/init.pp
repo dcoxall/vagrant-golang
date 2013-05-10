@@ -1,3 +1,3 @@
 class { "golang":
-    version => "1.1rc2"
+    version => "1.1rc3"
 }
