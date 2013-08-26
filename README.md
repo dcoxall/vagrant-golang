@@ -29,7 +29,7 @@ hello
 ```
 
 ## Choosing golang version
-This repo is hardcoded to use 1.1 although this can easily be changed after cloning. If you want to use another version simply
+This repo is hardcoded to use 1.1.2 although this can easily be changed after cloning. If you want to use another version simply
 change the `$version` parameter in `manifests/init.pp`. The version string is taken from the
 [golang downloads list](https://code.google.com/p/go/downloads/list). Once changed you can either call `vagrant up` if you
 haven't already setup the vagrant box or `vagrant provision` if the machine is already up.
