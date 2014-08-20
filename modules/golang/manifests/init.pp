@@ -1,7 +1,7 @@
-class golang ( $version = "1.2.2" ) {
+class golang ( $version = "1.3.1" ) {
 
     exec { "download-golang":
-        command => "/usr/bin/wget -O /usr/local/src/go$version.linux-amd64.tar.gz https://storage.googleapis.com/golang/go$version.linux-amd64.tar.gz",
+        command => "/usr/bin/wget --no-check-certificate -O /usr/local/src/go$version.linux-amd64.tar.gz http://golang.org/dl/go$version.linux-amd64.tar.gz",
         creates => "/usr/local/src/go$version.linux-amd64.tar.gz"
     }
 
