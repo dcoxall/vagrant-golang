@@ -1,4 +1,4 @@
-class golang ( $version = "1.3.1" ) {
+class golang ( $version = "1.3.3" ) {
 
   exec { "download-golang":
     command => "/usr/bin/wget --no-check-certificate -O /usr/local/src/go$version.linux-amd64.tar.gz http://golang.org/dl/go$version.linux-amd64.tar.gz",
