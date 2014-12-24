@@ -26,9 +26,8 @@ class golang ( $version = "1.4" ) {
     unless  => "/bin/grep -q GOPATH /home/vagrant/.profile ; /usr/bin/test $? -eq 0"
   }
 
-  exec { "install-git":
-    command => "/usr/bin/apt-get -qy update &&  /usr/bin/apt-get -qy install git",
-    unless  => "/usr/bin/test -x /usr/bin/git"
+  exec { "install-git-mercurial":
+    command => "/usr/bin/apt-get -qy update &&  /usr/bin/apt-get -qy install git mercurial"
   }
 
 }
