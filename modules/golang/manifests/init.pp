@@ -26,4 +26,16 @@ class golang ( $version = "1.4" ) {
     unless  => "/bin/grep -q GOPATH /home/vagrant/.profile ; /usr/bin/test $? -eq 0"
   }
 
+  if ! defined(Package["git"]) {
+    package { "git":
+      ensure => present,
+    }
+  }
+
+  if ! defined(Package["mercurial"]) {
+    package { "mercurial":
+      ensure => present,
+    }
+  }
+
 }
