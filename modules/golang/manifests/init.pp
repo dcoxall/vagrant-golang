@@ -32,6 +32,12 @@ class golang ( $version = "1.4" ) {
     }
   }
 
+  if ! defined(Package["bzr"]) {
+    package { "bzr":
+      ensure => present,
+    }
+  }
+
   if ! defined(Package["mercurial"]) {
     package { "mercurial":
       ensure => present,
