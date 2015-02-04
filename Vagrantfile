@@ -13,5 +13,5 @@ end
 
 Vagrant.configure("2") do |config|
   # other config here
-  config.vm.synced_folder ".", "/home/vagrant/go/src/go-project"
+  config.vm.synced_folder ".", "/home/vagrant/go/src/#{File.basename(Dir.getwd)}"
 end
