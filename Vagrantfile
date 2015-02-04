@@ -10,3 +10,8 @@ Vagrant::Config.run do |config|
     puppet.manifest_file      = "init.pp"
   end
 end
+
+Vagrant.configure("2") do |config|
+  # other config here
+  config.vm.synced_folder ".", "/home/vagrant/go"
+end
