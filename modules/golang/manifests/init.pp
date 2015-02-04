@@ -22,7 +22,7 @@ class golang ( $version = "1.4.1" ) {
   }
 
   exec { "setup-workspace":
-    command => "/bin/echo 'export GOPATH=/vagrant' >> /home/vagrant/.profile",
+    command => "/bin/echo 'export GOPATH=/home/vagrant/go' >> /home/vagrant/.profile",
     unless  => "/bin/grep -q GOPATH /home/vagrant/.profile ; /usr/bin/test $? -eq 0"
   }
 
