@@ -36,7 +36,7 @@ Clone or copy the repo and do the following:
 
 ## Choosing golang version
 
-This repo is hardcoded to use 1.8 although this can easily be changed after
+This repo is hardcoded to use 1.9 although this can easily be changed after
 cloning. If you want to use another version simply set the `$version` parameter
 when calling the class. The version string is taken from the
 [golang downloads list](http://golang.org/dl/). Once changed you can either call
