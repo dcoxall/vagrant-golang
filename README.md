@@ -7,7 +7,7 @@ errors.
 
 This repo aims to alleviate the problems starting a golang project by providing
 a vagrant environment and puppet script that will setup and prepare all the
-required pre-requisits.
+required prerequisites.
 
 ## Requirements
 
